@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+		body{
+			background-color: black;
+		}
+			img {
+				max-width:250px;
+				display: block;
+				margin: 0 auto;
+
+			}
+			#content { 
+				text-align: center;
+				-webkit-animation: mymove 3s infinite;
+
+			}
+			
+			ul {
+				list-style-type: none;
+			}
+			/* Standard syntax */
+			@keyframes mymove {
+				from {background-color: rgb(225, 112, 176
+					);}
+				to{background-color: red}
+			}	
+		</style>
+	
+	</head>
+	<body>
+
+		<div id="content">
+			<front size="6"><h1>Young the G.O.A.T</h1></front>
+			
+			<h3>Young M.A</h3>
+
+
+
+
+			<ul>		
+				<li>Young M.A government is Katorah Kasanova Marrero</li>
+				<li>She is a successful 25 year old R&B Female Rapper</li>
+				<li>Young M.A; Katorah , was born April 3rd 1992</li>
+				<li>What blew her up was her hit "Ooouuu"</li>
+				<li> She servived the death of her brother and is now making it in the music industry</li>
+				
+			</ul>
+		</div>
+		<img id="ma" src="">
+
+		<button onclick= "changePicture()">M.A</button>
+
+		<script type="text/javascript">
+			var arr =["https://pmchollywoodlife.files.wordpress.com/2017/03/young-ma-3.jpg?w=600","http://thefader-res.cloudinary.com/images/w_760,c_limit,f_auto,q_auto:best/F108_FEATURE_MA_coppermann_16_WEB_u6dees/tank-top-calvin-klein-vest-timberland-hat-a-p-c.jpg","young-ma.jpg","https://s-media-cache-ak0.pinimg.com/736x/12/f6/ef/12f6efe288f7cf4644e77362d91c93d4--rapper-a-young.jpg", "https://cdn.spinrilla.com/albums/55313/large/90a024bc84ff7a88bb70.png?1471902690"]
+
+			var y=0
+			
+			function changePicture() {
+				if (y<arr.length) {
+				
+					document.getElementById("ma").setAttribute("src", arr[y]); 
+					y++;
+				}
+				else{
+					y=0
+					document.getElementById("ma").setAttribute("src", arr[0]); 
+				}
+
+			}
+		</script>
+		
+		
+
+	</body>
+</html>
