@@ -7,7 +7,7 @@
 			background-color: black;
 		}
 			img {
-				max-width:250px;
+				max-width:270px;
 				display: block;
 				margin: 0 auto;
 
@@ -33,9 +33,9 @@
 	<body>
 
 		<ul>
-			<li style="display: inline-block; list-style-type: none"><a href="index.html">khlanee</a></li>
-			<li style="display: inline-block; list-style-type: none"><a href="youngma.html"></a>young ma</li>
-			<li style="display: inline-block; list-style-type: none"><a href="">cardi</a></li>
+			<li style="display: inline-block; list-style-type: none"><a href="index.html">kehlani</a></li>
+			<li style="display: inline-block; list-style-type: none"><a href="youngma.html">young ma</a></li>
+			<li style="display: inline-block; list-style-type: none"><a href="Top 3 .html"">cardi</a></li>
 		</ul>
 
 		<div id="content">
@@ -59,6 +59,11 @@
 
 		<button onclick= "changePicture()">M.A</button>
 
+
+		<audio style="display: none" id="Song2" controls> <source src="Song2.mp3" type="audio/mp3"></audio>
+
+		<button onclick="YMAsong()">Click Me!</button>
+
 		<script type="text/javascript">
 			var arr =["https://pmchollywoodlife.files.wordpress.com/2017/03/young-ma-3.jpg?w=600","http://thefader-res.cloudinary.com/images/w_760,c_limit,f_auto,q_auto:best/F108_FEATURE_MA_coppermann_16_WEB_u6dees/tank-top-calvin-klein-vest-timberland-hat-a-p-c.jpg","young-ma.jpg","https://s-media-cache-ak0.pinimg.com/736x/12/f6/ef/12f6efe288f7cf4644e77362d91c93d4--rapper-a-young.jpg", "https://cdn.spinrilla.com/albums/55313/large/90a024bc84ff7a88bb70.png?1471902690"]
 
@@ -76,6 +81,11 @@
 				}
 
 			}
+			function YMAsong() {
+				document.getElementById("Song2").play();
+				}
+
+
 		</script>
 		
 		

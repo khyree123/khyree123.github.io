@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<style type="text/css">
+				img{
+					width: 500px;
+					display: block;
+					margin: 0 auto;
+				}
+			</style>
+			 
+
+				</ul>
+				<style>
+				body{
+				-webkit-animation: mymove 3s infinite
+			}
+			/* Standard syntax */
+			 @keyframes mymove {
+			 from{background-color:rgb(165, 1, 1);}
+			 to {background-color: purple}
+			 }
+
+			 text-align; center 
+			</style>
+		<title></title> 
+	</head>
+	<body onpageload="changePicture()">
+
+		<font size="6"><h1>Cardi B</h1></font>
+
+		<ul> 
+			<li style="display: inline-block; list-style-type: none"><a href="index.html">kehlani</a></li>
+			<li style="display: inline-block; list-style-type: none"><a href="youngma.html">young ma</a></li>
+			<li style="display: inline-block; list-style-type: none"><a href="Top 3 .html">cardi</a></li> 
+		</ul>
+		
+		
+		<ul>
+
+			<li> Real name is Belcalis Almanzar.</li>
+			<li> Born and Raised in Bronx, New York</li>
+			<li> She is Dominican and Trinidadian</li>
+			<li> She was an exotic dancer from the age 18 to 23</li>
+			<li> She quit exotic dancing to send out a strong message against adultery and domestic violence </li>
+			<li> She is a singer and reality tv star</li>
+			<li> She was in a reality show called Love and Hip Hop New York</li>
+		</ul>
+
+		<img id="ma" src="">
+
+		<audio style="display: none" id="Song3" controls><source src="Song3.mp3" type="audio/mp3"></audio>
+		
+		<button onclick="CBsong()">Apply Pressure!</button>
+
+		<button onclick="changePicture()">Cardi</button>
+		
+		
+		<script type="text/javascript">
+			
+			var arr =["http://imagesvh1-a.akamaihd.net/uri/mgid:file:http:shared:vh1.com/news/wp-content/uploads/2016/11/Screen-Shot-2017-01-03-at-4.06.25-PM-1483477596.png?quality=0.85&format=jpg&width=480","http://www.thecultureweekly.com/wp-content/uploads/2017/07/82caa697-44a0-48fd-b4f3-18c870194fc5-363-000000349eced68b.jpg","http://imagesvh1-a.akamaihd.net/uri/mgid:file:http:shared:vh1.com/news/wp-content/uploads/2016/11/Screen-Shot-2017-01-03-at-4.09.45-PM-1483477794.png?quality=0.85&format=jpg&width=480"];
+			var y=0;
+
+
+			
+
+			function CBsong() {
+				document.getElementById("Song3").play();
+				} 
+		
+			
+			function changePicture() {
+				if (y<arr.length) {
+				
+					document.getElementById("ma").setAttribute("src", arr[y]); 
+					y++;
+				}
+				else{
+					y=0
+					document.getElementById("ma").setAttribute("src", arr[y]); 
+				}
+			}
+		
+
+		</script>
+	</body>
+</html>
